@@ -1,11 +1,14 @@
 import React from 'react';
+import Header from './Header.jsx';
 
 const Home = () => {
   return (
-    <div>
-      <h2>Welcome to the D&D Character Builder</h2>
-      <p>Start your adventure by building a character!</p>
-    </div>
+    <>
+        <Header />
+        <h3 id='homeInfo'>
+        Start your adventure by building a character!
+        </h3>
+    </>
   );
 };
 

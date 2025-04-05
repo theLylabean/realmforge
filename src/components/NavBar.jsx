@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
         <nav className='navBar'>
-            <h1 className='navTitle'>
-            🛡️ D&D Character Builder
-            </h1>
+            <h2 className='navTitle'>
+            Welcome to the D&D Character Builder
+            </h2>
                 <div className='navLinks'>
                     <Link to='/'>
                     Home   
