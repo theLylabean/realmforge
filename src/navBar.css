@@ -1,0 +1,32 @@
+.navBar {
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, links right */
+    align-items: center;
+    padding: 1rem;
+    background-color: #fef3c7; /* parchment look */
+    border-bottom: 2px solid #fcd34d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navTitle {
+    font-size: 1.75rem;
+    font-family: 'Georgia', serif;
+    color: #4b3621;
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1.25rem; /* spacing between links */
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: #4b3621;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .navLinks a:hover {
+    color: #7c3aed;
+  }

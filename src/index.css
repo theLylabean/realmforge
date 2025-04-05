@@ -2,10 +2,10 @@ body {
     background-color: darkgrey;
 }
 
-#header {
+/* #header {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: 'Skranji';
     font-size: x-large;
-}
+} */
