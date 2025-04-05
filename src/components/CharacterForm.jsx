@@ -1,8 +1,9 @@
 import React from 'react';
-import RaceSelect from './components/RaceSelect.jsx'
-import ClassSelect from './components/ClassSelect.jsx';
-import AbilityScoreInput from './components/AbilityScoreInput.jsx';
-import CharacterSheet from './components/CharacterSheet.jsx'
+import CharacterDetails from './CharacterDetails.jsx';
+// import BuildCharacter from './BuildCharacter.jsx'
+// import Backstory from './Backstory.jsx'
+// import SpellsAndEquiptment from './SpellsAndEquiptment.jsx'
+// import FinalCharacterSheet from './FinalCharacterSheet.jsx'
 
 function CharacterForm() {
   const [step, setStep] = useState(1);
@@ -63,7 +64,7 @@ function CharacterForm() {
         )}
 
         {step === 3 && (
-          <BackgroundSelect 
+          <Backstory 
             data={character}
             updateData={setCharacter}
             next={nextStep}
@@ -81,7 +82,7 @@ function CharacterForm() {
         )}
 
         {step === 5 && (
-          <CharacterSheet 
+          <FinalCharacterSheet 
             data={character}
             back={prevStep}
           />
