@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar.jsx'
 import Home from './components/Home.jsx'
 import CharacterForm from './components/CharacterForm.jsx'
-// import BuildCharacter from './components/BuildCharacter.jsx'
 import About from './components/About.jsx'
 import './App.css'
 import './index.css'
@@ -13,6 +12,10 @@ import './home.css'
 import './header.css'
 import './characterDetails.css'
 import './buildCharacter.css'
+import './backstory.css'
+
+const baseUrl = 'https://www.dnd5eapi.co/api/2014';
+console.log(baseUrl)
 
 function App() {
   const [gameData, setGameData] = useState({

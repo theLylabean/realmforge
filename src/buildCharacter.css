@@ -5,16 +5,15 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+#build-character-header {
+    text-align: center;
+    font-family: 'Skranji';
+    font-size: x-large;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+h4 {
+    font-family: 'Skranji';
+    font-size: larger;
 }
 
 .ability-scores {
@@ -29,11 +28,6 @@
     text-decoration: underline;
     margin-bottom: 0.25rem;
 } */
-
-#build-character-header {
-    text-align: center;
-    font-family: 'Skranji';
-}
 
 .races-and-classes-select {
     background-color: #cbd5e1;

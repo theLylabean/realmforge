@@ -44,10 +44,14 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
   return (
     <div className='spells-equipment-container'>
       <h3 className='spells-and-equipment-header'>Choose Spells</h3>
+
+      <div className='spells-equipment-form-group'>
       {spellList.length === 0 ? (
-        <p>No spells found for class: {data.charClass}</p>
+        <p>{!data.charClass ? 'No Class Has Been Selected' : `No spells found for class: ${data.charClass.charAt(0).toUpperCase() + data.charClass.slice(1)}`}
+        </p>
       ) : (
-        <ul className='spell-grid' style={{ listStyle: "none", padding: 0 }}>
+        <ul 
+          className='spell-grid'>
           {spellList.map((spell) => (
             <li key={spell.index}>
               <label>
@@ -55,22 +59,27 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
                   type="checkbox"
                   checked={selectedSpells.includes(spell.index)}
                   onChange={() => handleSpellToggle(spell.index)}
-                />
-                {spell.name}
+                />{spell.name}
               </label>
             </li>
           ))}
         </ul>
       )}
+      </div>
 
-      <h3 className='spells-and-equipment-header' style={{ marginTop: "2rem" }}>Choose Equipment</h3>
-      <textarea className='spells-and-equipment-input'
-        placeholder="Type equipment manually for now (e.g. longsword, leather armor)..."
-        value={equipment.join(", ")}
-        onChange={(e) => setEquipment(e.target.value.split(",").map(i => i.trim()))}
-        rows={4}
-        style={{ width: "100%", fontSize: "1rem", padding: "0.5rem" }}
-      />
+      <h3 
+        className='spells-and-equipment-header' 
+        >Choose Equipment
+      </h3>
+      <div className='spells-equipment-form-group'>
+        <textarea 
+          className='spells-and-equipment-input'
+          placeholder="Type equipment manually for now (e.g. longsword, leather armor)..."
+          value={equipment.join(", ")}
+          onChange={(e) => setEquipment(e.target.value.split(",").map(i => i.trim()))}
+          rows={4}
+        />
+      </div>
 
       <div style={{ marginTop: "1rem" }}>
         <button onClick={back}>Back</button>

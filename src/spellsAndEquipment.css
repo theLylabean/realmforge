@@ -5,6 +5,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.spells-and-equipment-header {
+    text-align: center;
+    font-family: 'Skranji';
+    margin-top: "2rem"
+}
+
 .spell-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -12,6 +18,10 @@
     padding: 0;
     list-style: none;
     margin-top: 1rem;
+}
+
+.spell-grid ul {
+    padding-left: 0;
 }
 
 .spell-grid li {
@@ -22,26 +32,22 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
   
-ul {
-    padding-left: 0;
-}
-  
 .spells-and-equipment-input {
-    max-width: 1460px;
+    max-width: 1390px;
     padding: 0.75rem;
     font-family: 'Macondo';
     font-size: 1rem;
     border-radius: 6px;
     border: 1px solid #cbb279;
     background-color: #cbd5e1;
+    grid-column: span 4;
 }
 
 p {
-    max-width: 1460px;
+    text-align: center;
     padding: 0.75rem;
     font-family: 'Macondo';
     font-size: 1rem;
-    font-family: 'Macondo';
 }
   
 .form-buttons {
@@ -50,8 +56,4 @@ p {
     gap: 1rem;
 }
   
-.spells-and-equipment-header {
-    text-align: center;
-    font-family: 'Skranji';
-}
   

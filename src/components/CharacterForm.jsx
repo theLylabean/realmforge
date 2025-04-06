@@ -3,7 +3,7 @@ import { useState } from 'react';
 import CharacterDetails from './CharacterDetails.jsx';
 import BuildCharacter from './BuildCharacter.jsx';
 import SpellsAndEquipment from './SpellsAndEquipment.jsx';
-// import Backstory from './Backstory.jsx';
+import Backstory from './Backstory.jsx';
 // import FinalCharacterSheet from './FinalCharacterSheet.jsx';
 
 function CharacterForm({ gameData }) {
@@ -103,4 +103,5 @@ export default CharacterForm;
 //         Class
 //         Assign Ability Scores
 //         Spells & Gear
+//         Backstory
 //         Final Character Sheet/Review

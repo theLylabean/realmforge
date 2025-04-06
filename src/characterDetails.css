@@ -5,20 +5,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.full-width {
-    grid-column: span 2;
+#character-details-header {
+    text-align: center;
+    font-family: 'Skranji';
 }
 
 .character-details-alignment {
@@ -45,14 +34,4 @@
     flex: 1;
 }
 
-label {
-    font-family: 'Macondo';
-    text-decoration: underline;
-    margin-bottom: 0.25rem;
-}
-
-#character-details-header {
-    text-align: center;
-    font-family: 'Skranji';
-}
 

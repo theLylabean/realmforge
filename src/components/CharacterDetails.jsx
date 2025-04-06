@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../characterDetails.css';
 
 const CharacterDetails = ({ data, updateData, next }) => {
     const handleChange = (e) => {
@@ -16,28 +16,28 @@ const CharacterDetails = ({ data, updateData, next }) => {
             
         <div className='form-grid'>
             <div className='form-group'>
-            <label htmlFor='name'>
-                Name:
-            </label>
-            <input
-                className='character-details-select'
-                placeholder="Enter character name here"
-                type='text'
-                id='name'
-                name='name'
-                value={data.name}
-                onChange={handleChange} 
-            />
+                <label htmlFor='name'>
+                    Name:
+                </label>
+                <input
+                    className='character-details-select'
+                    placeholder="Enter character name here"
+                    type='text'
+                    id='name'
+                    name='name'
+                    value={data.name}
+                    onChange={handleChange} 
+                />
             </div>
 
             <div className='form-group'>
-            <label htmlFor='age'>
-                Age:
-            </label>
-            <input
-                className='character-details-select'
-                placeholder="Enter character age here"
-                type='number'
+                <label htmlFor='age'>
+                    Age:
+                </label>
+                <input
+                    className='character-details-select'
+                    placeholder="Enter character age here"
+                    type='number'
                 id='age'
                 name='age'
                 value={data.age}

@@ -1,6 +1,7 @@
 import React from "react";
-import RaceSelect from "./RaceSelect";
-import ClassSelect from "./ClassSelect";
+import RaceSelect from "./RaceSelect.jsx";
+import ClassSelect from "./ClassSelect.jsx";
+import '../buildCharacter.css';
 
 const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
   const handleAbilityChange = (e) => {
