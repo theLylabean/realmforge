@@ -14,17 +14,35 @@
 .form-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .full-width {
     grid-column: span 2;
 }
 
-input,
-select,
-textarea {
+.character-details-alignment {
+    background-color: #cbd5e1;
+    width: 300px;
     padding: 0.5rem;
+    font-family: 'Macondo';
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.character-details-input,
+.character-details-select,
+.character-details-textarea {
+    background-color: #cbd5e1;
+    width: 300px;
+    padding: 0.5rem;
+    font-family: 'Macondo';
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
 }
 
 label {

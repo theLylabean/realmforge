@@ -4,7 +4,7 @@ const RaceSelect = ({ value, onChange, races }) => {
   return (
     <div className='form-group'>
       <label htmlFor="race">Race:</label>
-      <select
+      <select className='races-and-classes-select'
         id="race"
         name="race"
         value={value}

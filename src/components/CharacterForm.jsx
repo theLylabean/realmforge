@@ -2,8 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import CharacterDetails from './CharacterDetails.jsx';
 import BuildCharacter from './BuildCharacter.jsx';
+import SpellsAndEquipment from './SpellsAndEquipment.jsx';
 // import Backstory from './Backstory.jsx';
-// import SpellsAndEquiptment from './SpellsAndEquiptment.jsx';
 // import FinalCharacterSheet from './FinalCharacterSheet.jsx';
 
 function CharacterForm({ gameData }) {
@@ -67,7 +67,7 @@ function CharacterForm({ gameData }) {
         )}
 
         {step === 3 && (
-          <SpellsAndEquiptment
+          <SpellsAndEquipment
           data={character}
           updateData={setCharacter}
           next={nextStep}

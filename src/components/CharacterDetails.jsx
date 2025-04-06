@@ -20,6 +20,8 @@ const CharacterDetails = ({ data, updateData, next }) => {
                 Name:
             </label>
             <input
+                className='character-details-select'
+                placeholder="Enter character name here"
                 type='text'
                 id='name'
                 name='name'
@@ -32,7 +34,9 @@ const CharacterDetails = ({ data, updateData, next }) => {
             <label htmlFor='age'>
                 Age:
             </label>
-            <input 
+            <input
+                className='character-details-select'
+                placeholder="Enter character age here"
                 type='number'
                 id='age'
                 name='age'
@@ -46,6 +50,8 @@ const CharacterDetails = ({ data, updateData, next }) => {
                 Gender:
             </label>
             <input
+                className='character-details-select'
+                placeholder="Enter character gender here"
                 type='text'
                 id='gender'
                 name='gender'
@@ -55,10 +61,26 @@ const CharacterDetails = ({ data, updateData, next }) => {
             </div>
 
             <div className='form-group'>
+            <label htmlFor='prounouns'>
+                Pronouns:
+            </label>
+            <input
+                className='character-details-select'
+                placeholder="Enter character pronouns here"
+                type='text'
+                id='pronouns'
+                name='pronouns'
+                value={data.pronouns}
+                onChange={handleChange}
+            />
+            </div>
+
+            <div className='form-group'>
             <label htmlFor='alignment'>
                 Alignment:
             </label>
-            <select 
+            <select
+                className='character-details-alignment'
                 id='alignment'
                 name='alignment'
                 value={data.alignment}
@@ -77,23 +99,14 @@ const CharacterDetails = ({ data, updateData, next }) => {
             </select>
             </div>
 
-            <div className='form-group full-width'>
-            <label htmlFor='appearance'>
-                Appearance:
-            </label>
-            <textarea 
-                id='appearance'
-                name='appearance'
-                value={data.appearance}
-                onChange={handleChange}
-            />
-            </div>
 
             <div className='form-group'>
             <label htmlFor='faction'>
                 Faction:
             </label>
-            <input 
+            <input
+                className='character-details-input'
+                placeholder="Enter character faction here"
                 type='text'
                 id='faction'
                 name='faction'
@@ -106,12 +119,29 @@ const CharacterDetails = ({ data, updateData, next }) => {
             <label htmlFor='deity'>
                 Deity:
             </label>
-            <input 
+            <input
+                className='character-details-input'
+                placeholder="Enter character deity here"
                 type='text'
                 id='deity'
                 name='deity'
                 value={data.deity}
                 onChange={handleChange}
+            />
+            </div>
+
+            <div className='form-group full-width'>
+            <label htmlFor='appearance'>
+                Appearance:
+            </label>
+            <textarea
+                className='character-details-textarea'
+                placeholder="Describe your character's appearance here"
+                id='appearance'
+                name='appearance'
+                value={data.appearance}
+                onChange={handleChange}
+                rows={3}
             />
             </div>
         </div>
