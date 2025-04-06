@@ -42,7 +42,7 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
   };
 
   return (
-    <div className='spells-equiptment-container'>
+    <div className='spells-equipment-container'>
       <h3 className='spells-and-equipment-header'>Choose Spells</h3>
       {spellList.length === 0 ? (
         <p>No spells found for class: {data.charClass}</p>

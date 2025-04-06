@@ -34,7 +34,7 @@ const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
         </div>
 
         <div className='form-group'>
-          <section section className='build-character-selection'>
+          <section className='build-character-selection'>
             <h4>Choose Class</h4>
             <ClassSelect
               value={data.charClass}
@@ -46,7 +46,7 @@ const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
           </section>
         </div>
 
-          <section section className='build-character-selection'>
+          <section className='build-character-selection'>
             <h4>Assign Ability Scores</h4>
             <div className='ability-scores'>
             {Object.entries(data.abilityScores).map(([stat, val]) => (
