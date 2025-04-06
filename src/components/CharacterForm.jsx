@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import CharacterDetails from './CharacterDetails.jsx';
-// import BuildCharacter from './BuildCharacter.jsx'
-// import Backstory from './Backstory.jsx'
-// import SpellsAndEquiptment from './SpellsAndEquiptment.jsx'
-// import FinalCharacterSheet from './FinalCharacterSheet.jsx'
+import BuildCharacter from './BuildCharacter.jsx';
+// import Backstory from './Backstory.jsx';
+// import SpellsAndEquiptment from './SpellsAndEquiptment.jsx';
+// import FinalCharacterSheet from './FinalCharacterSheet.jsx';
 
-function CharacterForm() {
+function CharacterForm({ gameData }) {
   const [step, setStep] = useState(1);
   const [character, setCharacter] = useState({
     // Character Details:
@@ -61,20 +61,22 @@ function CharacterForm() {
             updateData={setCharacter}
             next={nextStep}
             back={prevStep}
+            races={gameData.races || []}
+            classes={gameData.classes || []}
           /> 
         )}
 
         {step === 3 && (
-          <Backstory 
-            data={character}
-            updateData={setCharacter}
-            next={nextStep}
-            back={prevStep}
+          <SpellsAndEquiptment
+          data={character}
+          updateData={setCharacter}
+          next={nextStep}
+          back={prevStep}
           />
         )}
 
         {step === 4 && (
-          <SpellsAndEquiptment
+          <Backstory 
             data={character}
             updateData={setCharacter}
             next={nextStep}

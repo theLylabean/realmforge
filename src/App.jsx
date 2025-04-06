@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar.jsx'
 import Home from './components/Home.jsx'
 import CharacterForm from './components/CharacterForm.jsx'
+// import BuildCharacter from './components/BuildCharacter.jsx'
 import About from './components/About.jsx'
 import './App.css'
 import './index.css'
@@ -11,6 +12,7 @@ import './navBar.css'
 import './home.css'
 import './header.css'
 import './characterDetails.css'
+import './buildCharacter.css'
 
 function App() {
   const [gameData, setGameData] = useState({
@@ -53,7 +55,7 @@ function App() {
       <main className="app-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/builder" element={<CharacterForm />} />
+          <Route path="/builder" element={<CharacterForm gameData={gameData} />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
