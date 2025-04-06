@@ -1,0 +1,40 @@
+.character-details-container {
+    background-color: #fef3c7;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+label {
+    font-family: 'Macondo';
+    text-decoration: underline;
+    margin-bottom: 0.25rem;
+}
+
+#character-details-header {
+    text-align: center;
+    font-family: 'Skranji';
+}
+

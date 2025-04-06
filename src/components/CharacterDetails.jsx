@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const CharacterDetails = ({ data, updateData, next }) => {
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -10,41 +11,55 @@ const CharacterDetails = ({ data, updateData, next }) => {
     };
     
     return (
-        <div>
-            <h3>Character Details</h3>
-            <label>
+        <div className='character-details-container'>
+            <h3 id='character-details-header'>Character Details</h3>
+            
+        <div className='form-grid'>
+            <div className='form-group'>
+            <label htmlFor='name'>
                 Name:
             </label>
             <input
                 type='text'
+                id='name'
                 name='name'
                 value={data.name}
                 onChange={handleChange} 
             />
+            </div>
 
-            <label>
+            <div className='form-group'>
+            <label htmlFor='age'>
                 Age:
             </label>
             <input 
                 type='number'
+                id='age'
                 name='age'
                 value={data.age}
                 onChange={handleChange}
             />
+            </div>
 
-            <label>
+            <div className='form-group'>
+            <label htmlFor='gender'>
+                Gender:
             </label>
             <input
                 type='text'
+                id='gender'
                 name='gender'
                 value={data.gender}
                 onChange={handleChange}
             />
+            </div>
 
-            <label>
+            <div className='form-group'>
+            <label htmlFor='alignment'>
                 Alignment:
             </label>
             <select 
+                id='alignment'
                 name='alignment'
                 value={data.alignment}
                 onChange={handleChange}
@@ -60,35 +75,46 @@ const CharacterDetails = ({ data, updateData, next }) => {
                 <option value="Neutral Evil">Neutral Evil</option>
                 <option value="Chaotic Evil">Chaotic Evil</option>
             </select>
+            </div>
 
-            <label>
+            <div className='form-group full-width'>
+            <label htmlFor='appearance'>
                 Appearance:
             </label>
             <textarea 
+                id='appearance'
                 name='appearance'
                 value={data.appearance}
                 onChange={handleChange}
             />
+            </div>
 
-            <label>
+            <div className='form-group'>
+            <label htmlFor='faction'>
                 Faction:
             </label>
             <input 
                 type='text'
+                id='faction'
                 name='faction'
                 value={data.faction}
                 onChange={handleChange}
             />
+            </div>
 
-            <label>
+            <div className='form-group'>
+            <label htmlFor='deity'>
                 Deity:
             </label>
             <input 
                 type='text'
+                id='deity'
                 name='deity'
                 value={data.deity}
                 onChange={handleChange}
             />
+            </div>
+        </div>
 
             <div style={{
                 marginTop: '1rem'
