@@ -36,8 +36,6 @@ function App() {
         const racesData = await racesRes.json();
         const classesData = await classesRes.json();
 
-        console.log('Races data:', racesData)
-        console.log('Classes data:', classesData)
         setGameData({
           races: racesData.results,
           classes: classesData.results,

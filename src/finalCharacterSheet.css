@@ -67,7 +67,6 @@
 .spell-list {
     list-style: disc;
     padding-left: 1.5rem;
-    text-align: left;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* optional: multi-column */
     gap: 0.75rem;

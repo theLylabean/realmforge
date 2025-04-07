@@ -46,7 +46,6 @@ function CharacterForm({ gameData }) {
     const fetchData = async () => {
       const res = await fetch('https://www.dnd5eapi.co/api/2014')
       const data = await res.json();
-      console.log('Api Root Response: ', data);
     }
     fetchData();
   })

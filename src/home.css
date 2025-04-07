@@ -1,3 +1,62 @@
-#homeInfo {
+.homepage-container {
     text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
 }
+
+.homepage-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.homepage-header h1 {
+    font-size: 3rem;
+    font-family: 'Skranji', serif;
+    color: #4b3f2f;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .homepage-header h2 {
+    font-size: 1.5rem;
+    font-family: 'Macondo';
+    color: #6b4e2d;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .homepage-container li {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  .start-button {
+    background-color: #d6b46a;
+    color: #3b2f2f;
+    font-family: 'Skranji', serif;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    margin-top: 2rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .start-button:hover {
+    transform: scale(1.05);
+    background-color: #e8c97a;
+  }
+
+  @media (max-width: 768px) {
+    .homepage-container {
+      padding: 1rem;
+    }
+  }
+  
+  

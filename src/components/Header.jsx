@@ -1,9 +1,12 @@
 const Header = () => {
     return (
-        <div>
-            <h1 className='header'>
-            🛡️ D&D Character Builder
+        <div className='homepage-header'>
+            <h1>
+                Welcome to the 🛡️ RealmForge D&D Character Builder
             </h1>
+            <h2>
+                Craft your hero. Choose your destiny. Conquer your story.
+            </h2>
         </div>
     )
 }
