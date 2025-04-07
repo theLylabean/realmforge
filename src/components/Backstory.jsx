@@ -53,13 +53,14 @@ const Backstory = ({ data, updateData, next, back }) => {
                 </div>
 
                 <div className='backstory-form-group full-width'>
+                    <label> Full Backstory </label>
                     <textarea
                         className='backstory-input'
                         name='narrativeBackstory'
-                        placeholder="Optional: Enter your entire backstory here"
+                        placeholder="Optional: Enter your full backstory here"
                         value={data.narrativeBackstory}
                         onChange={handleChange}
-                        rows={6}
+                        rows={8}
                         style={{ width: "100%", fontSize: "1rem", padding: "0.5rem" }}
                     />
                 </div>

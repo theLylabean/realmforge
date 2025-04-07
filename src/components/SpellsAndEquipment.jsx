@@ -33,6 +33,15 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
   };
 
   const handleSubmit = () => {
+    const updatedEquipment = equipment
+      .split(',')
+      .map(item => item.trim())
+      .filter(Boolean);
+    updateData({
+      ...CharacterData,
+      equipment: updatedEquipment
+    });
+
     updateData({
       ...data,
       spells: selectedSpells,
@@ -45,7 +54,7 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
     <div className='spells-equipment-container'>
       <h3 className='spells-and-equipment-header'>Choose Spells</h3>
 
-      <div className='spells-equipment-form-group'>
+      <div className='spells-container'>
       {spellList.length === 0 ? (
         <p>{!data.charClass ? 'No Class Has Been Selected' : `No spells found for class: ${data.charClass.charAt(0).toUpperCase() + data.charClass.slice(1)}`}
         </p>
@@ -75,9 +84,9 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
         <textarea 
           className='spells-and-equipment-input'
           placeholder="Type equipment manually for now (e.g. longsword, leather armor)..."
-          value={equipment.join(", ")}
-          onChange={(e) => setEquipment(e.target.value.split(",").map(i => i.trim()))}
-          rows={4}
+          value={equipment}
+          onChange={(e) => setEquipment(e.target.value)}
+          rows={8}
         />
       </div>
 

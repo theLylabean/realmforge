@@ -16,7 +16,7 @@
 .backstory-form-group {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 700px;
     width: 100%;
     align-items: center;
 }
@@ -32,23 +32,4 @@
     background-color: #cbd5e1;
     width: 100%;
 }
-
-/* p {
-    max-width: 1460px;
-    padding: 0.75rem;
-    font-family: 'Macondo';
-    font-size: 1rem;
-    font-family: 'Macondo';
-} */
-  
-/* .form-buttons {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 1rem;
-}
-  
-.spells-and-equipment-header {
-    text-align: center;
-    font-family: 'Skranji';
-} */
   

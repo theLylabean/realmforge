@@ -1,4 +1,6 @@
 .spells-equipment-container {
+    display: flex;
+    flex-direction: column;
     background-color: #fef3c7;
     padding: 2rem;
     border-radius: 12px;
@@ -20,6 +22,14 @@
     margin-top: 1rem;
 }
 
+.spells-equipment-form-group {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1000px; */
+    width: 100%;
+    align-items: center;
+}
+
 .spell-grid ul {
     padding-left: 0;
 }
@@ -33,14 +43,14 @@
 }
   
 .spells-and-equipment-input {
-    max-width: 1390px;
+    max-width: 1000px;
+    width: 100%;
     padding: 0.75rem;
     font-family: 'Macondo';
     font-size: 1rem;
     border-radius: 6px;
     border: 1px solid #cbb279;
     background-color: #cbd5e1;
-    grid-column: span 4;
 }
 
 p {

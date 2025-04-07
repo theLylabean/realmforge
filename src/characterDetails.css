@@ -12,7 +12,7 @@
 
 .character-details-alignment {
     background-color: #cbd5e1;
-    width: 300px;
+    width: 100%;
     padding: 0.5rem;
     font-family: 'Macondo';
     font-size: 2rem;
@@ -25,7 +25,7 @@
 .character-details-select,
 .character-details-textarea {
     background-color: #cbd5e1;
-    width: 300px;
+    width: 100%;
     padding: 0.5rem;
     font-family: 'Macondo';
     font-size: 1rem;

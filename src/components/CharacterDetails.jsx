@@ -38,111 +38,111 @@ const CharacterDetails = ({ data, updateData, next }) => {
                     className='character-details-select'
                     placeholder="Enter character age here"
                     type='number'
-                id='age'
-                name='age'
-                value={data.age}
-                onChange={handleChange}
-            />
+                    id='age'
+                    name='age'
+                    value={data.age}
+                    onChange={handleChange}
+                />
             </div>
 
             <div className='form-group'>
-            <label htmlFor='gender'>
-                Gender:
-            </label>
-            <input
-                className='character-details-select'
-                placeholder="Enter character gender here"
-                type='text'
-                id='gender'
-                name='gender'
-                value={data.gender}
-                onChange={handleChange}
-            />
+                <label htmlFor='gender'>
+                    Gender:
+                </label>
+                <input
+                    className='character-details-select'
+                    placeholder="Enter character gender here"
+                    type='text'
+                    id='gender'
+                    name='gender'
+                    value={data.gender}
+                    onChange={handleChange}
+                />
             </div>
 
             <div className='form-group'>
-            <label htmlFor='prounouns'>
-                Pronouns:
-            </label>
-            <input
-                className='character-details-select'
-                placeholder="Enter character pronouns here"
-                type='text'
-                id='pronouns'
-                name='pronouns'
-                value={data.pronouns}
-                onChange={handleChange}
-            />
+                <label htmlFor='prounouns'>
+                    Pronouns:
+                </label>
+                <input
+                    className='character-details-select'
+                    placeholder="Enter character pronouns here"
+                    type='text'
+                    id='pronouns'
+                    name='pronouns'
+                    value={data.pronouns}
+                    onChange={handleChange}
+                />
             </div>
 
             <div className='form-group'>
-            <label htmlFor='alignment'>
-                Alignment:
-            </label>
-            <select
-                className='character-details-alignment'
-                id='alignment'
-                name='alignment'
-                value={data.alignment}
-                onChange={handleChange}
-            >
-                <option value=''>Select Alignment</option>
-                <option value='Lawful Good'>Lawful Good</option>
-                <option value="Neutral Good">Neutral Good</option>
-                <option value="Chaotic Good">Chaotic Good</option>
-                <option value="Lawful Neutral">Lawful Neutral</option>
-                <option value="True Neutral">True Neutral</option>
-                <option value="Chaotic Neutral">Chaotic Neutral</option>
-                <option value="Lawful Evil">Lawful Evil</option>
-                <option value="Neutral Evil">Neutral Evil</option>
-                <option value="Chaotic Evil">Chaotic Evil</option>
-            </select>
+                <label htmlFor='alignment'>
+                    Alignment:
+                </label>
+                <select
+                    className='character-details-alignment'
+                    id='alignment'
+                    name='alignment'
+                    value={data.alignment}
+                    onChange={handleChange}
+                >
+                    <option value=''>Select Alignment</option>
+                    <option value='Lawful Good'>Lawful Good</option>
+                    <option value="Neutral Good">Neutral Good</option>
+                    <option value="Chaotic Good">Chaotic Good</option>
+                    <option value="Lawful Neutral">Lawful Neutral</option>
+                    <option value="True Neutral">True Neutral</option>
+                    <option value="Chaotic Neutral">Chaotic Neutral</option>
+                    <option value="Lawful Evil">Lawful Evil</option>
+                    <option value="Neutral Evil">Neutral Evil</option>
+                    <option value="Chaotic Evil">Chaotic Evil</option>
+                </select>
             </div>
 
 
             <div className='form-group'>
-            <label htmlFor='faction'>
-                Faction:
-            </label>
-            <input
-                className='character-details-input'
-                placeholder="Enter character faction here"
-                type='text'
-                id='faction'
-                name='faction'
-                value={data.faction}
-                onChange={handleChange}
-            />
+                <label htmlFor='faction'>
+                    Faction:
+                </label>
+                <input
+                    className='character-details-input'
+                    placeholder="Enter character faction here"
+                    type='text'
+                    id='faction'
+                    name='faction'
+                    value={data.faction}
+                    onChange={handleChange}
+                />
             </div>
 
             <div className='form-group'>
-            <label htmlFor='deity'>
-                Deity:
-            </label>
-            <input
-                className='character-details-input'
-                placeholder="Enter character deity here"
-                type='text'
-                id='deity'
-                name='deity'
-                value={data.deity}
-                onChange={handleChange}
-            />
+                <label htmlFor='deity'>
+                    Deity:
+                </label>
+                <input
+                    className='character-details-input'
+                    placeholder="Enter character deity here"
+                    type='text'
+                    id='deity'
+                    name='deity'
+                    value={data.deity}
+                    onChange={handleChange}
+                />
             </div>
 
             <div className='form-group full-width'>
-            <label htmlFor='appearance'>
-                Appearance:
-            </label>
-            <textarea
-                className='character-details-textarea'
-                placeholder="Describe your character's appearance here"
-                id='appearance'
-                name='appearance'
-                value={data.appearance}
-                onChange={handleChange}
-                rows={3}
-            />
+                <label htmlFor='appearance'>
+                    Appearance:
+                </label>
+                <textarea
+                    className='character-details-textarea'
+                    placeholder="Describe your character's appearance here"
+                    id='appearance'
+                    name='appearance'
+                    value={data.appearance}
+                    onChange={handleChange}
+                    rows={3}
+                />
             </div>
         </div>
 
@@ -150,9 +150,9 @@ const CharacterDetails = ({ data, updateData, next }) => {
                 marginTop: '1rem'
                 }}
             >
-            <button onClick={next}>
+                <button onClick={next}>
                     Next
-            </button>
+                </button>
             </div>
         </div>
     );
