@@ -1,102 +1,78 @@
-# D & D Charachter Builder
+# Realmforge
+*A Fantasy-Themed Dungeons & Dragons 5e Character Builder*
 
-## Current Ideas:
+🛡️ RealmForge is a React-based Dungeons & Dragons character builder that guides users through the 5e character creation process. Players can select a race, class, ability scores, spells, equipment, and craft a backstory — then view a polished final character sheet styled like ancient parchment. I will be updating the app to add more features.
 
-### Features:
-1. Step-by-step character creation flow:
-    -Name & Basic Info (name, alignment, level)
-    -Choose Race (pull race list from API, show traits)
-    -Choose Class (pull class list, show proficiencies, features)
-    -Choose Background (use API for starting gear and skills)
-    -Assign Ability Scores (manual input or dice roll simulation)
-    -Review Character Sheet (all info compiled for final view)
+This project was built using the D&D 5e API and designed to feel immersive and easy to use for both new and experienced players.
 
-2. API Integration:
-    -D&D 5e API for races, classes, backgrounds, equipment, etc.
-    -Save selections to React state or localStorage for now.
+## 🖼️ Screenshots
 
-### Visual:
-1. Fonts: Use fantasy-style fonts from Google Fonts like:
-    -MedievalSharp, Uncial Antiqua, Pirata One, or Cinzel
-2. Textures:
-    -A parchment or scroll background image
-    -Borders or corners with scrollwork or runes
-3. Icons & Logos:
-    -Find or make class logos (swords, shields, arcane symbols)
-    -Use Game-icons.net or Flaticon with fantasy sets
-4. Animations: Subtle page transitions (Framer Motion?), hover effects for buttons or selections
+![Homepage Screenshot](./screenshots/Homepage.png)
+![Character Details Screenshot](./screenshots/CharacterDetails.png)
+![Final Character Sheet Screenshot](./screenshots/FinalCharacterSheet.png)
 
-### Components:
-1. CharacterForm (holds step-by-step inputs)
-    -RaceSelect
-    -ClassSelect
-    -BackgroundSelect
-    -AbilityScoreInput
-2. CharacterSheet (final review of all data)
-3. StepNavigation or ProgressBar
-4. Header with medieval logo or nameplate
+## 🛠️ Built With
 
-### Bonus Features
-(These can be implemented later)
-1. Save/load multiple characters (localStorage or Firebase)
-2. Export to PDF --if I get done with the base of the App, maybe put this in, but it's not important right now.
-3. Roll dice (e.g., 4d6 for stat gen)
-4. Add a “Randomize” mode
-5. Toggle light/dark parchment themes
+- React
+- React Router
+- HTML5 / CSS3
+- D&D 5e API (https://www.dnd5eapi.co/)
 
-## Roadmap:
+## 🚀 Getting Started
 
-### Phase One: Setup & Core Functionality (MVP)
-1. Create Basic Page Structure
-    -Home / Character Builder page
-    -Final Character Sheet page or component
-2. Set Up Multi-Step Form
-Use state to store progress through steps (could be in one component or multiple)
-    1. Name & alignment
-    2. Choose race (fetch from API, display info when selected)
-    3. Choose class (fetch from API, display info)
-    4. Assign ability scores (manual input for MVP)
-    5. Final review (show all selected info)
-3. Manage State
-    -Use useState or useReducer to keep track of form selections
-    -Possibly use Context to share data across components
-4. Display Final Character Sheet
-    -Show character name, race, class, ability scores, etc.
-    -Pull extra details from the API where relevant (traits, features)
+To run this project locally:
 
-### Phase Two: Styling & Theming
-1. Apply Medieval/Fantasy UI
-    -Use parchment or scroll-style background
-    -Add fantasy fonts from Google Fonts (e.g., Cinzel, Uncial Antiqua)
-    -Use borders, icons, or textures for UI elements
-    -Add simple CSS or Tailwind for layout/styling
-2. Add Icons & Class Logos
-    -Find or design class/race icons
-    -Display icons next to options
-    -Use consistent theme/styling throughout
+Clone the repository:
+   ```
+git clone https://github.com/theLylabean/DandDCharacterBuilder.Workshop26A.git
+   ```
 
-### Phase Three: Monster Effectiveness Feature (do this at a later date)
-1. Design the “Effectiveness Advisor”
-    -After final character sheet is shown, analyze the character’s build
-    -Match traits, class, or stats to general monster weaknesses
-    -Show a panel: “Strong Against” / “Weak Against” monster types
-2. Use API Data or Create a Simple Map
-    -Option A: Use D&D API monster data and filter by type
-    -Option B: Create your own simplified monster-type reference in a JSON file
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-### Phase Four: Stretch Goals
-1. Add Save/Load Character
-    -Save character to localStorage or a small backend (Firebase, etc.)
-    -Allow user to return and edit/view characters
-2. Add Spell/Equipment Selection
-    -Pull available spells for the chosen class
-    -Let user select starting equipment or starting spells
-3. Add Dice Roller
-    -Add a simple dice roller to generate ability scores (4d6 drop lowest)
-    -Let user choose manual input or auto roll
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-### Final Steps
-1. Polish UI and fix any bugs
-2. Write README with instructions & features (research the best way to do this)
-3. Deploy with Netlify or Vercel (research what this is for later)
-4. Share it in your portfolio/demo to teacher!
+    The app will run at `http://localhost:3000`
+
+## 🎮 Usage
+
+Click **"Begin Building Your Character"** on the homepage to start. Follow the step-by-step process to select your race, class, spells, equipment, and create your backstory. Once complete, you can view your final character sheet currently and the save feature will be added soon.
+
+## 👤 About the Developer
+
+Hi! I'm Lyla, a full-stack developer in training with a background in music. This project was built as a way to combine my love for storytelling and fantasy with modern web development tools.
+
+Connect with me on [LinkedIn](https://linkedin.com/in/lyladlynn) or check out more of my work on [GitHub](https://github.com/theLylabean).
+
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+```
+MIT License
+
+Copyright (c) 2024 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,34 @@
+.about-container {
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Skranji', serif;
+    font-size: larger;
+    color: #3b2f2f;
+    background-color: #fef3c7;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.about-container a {
+    color: #6b4e2d;
+    text-decoration: underline;
+}
+
+.about-container a:hover {
+    color: #a37c40;
+}
+  
+.about-container p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.5rem;
+}
+  
+.about-footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #6b4e2d;
+}
+  

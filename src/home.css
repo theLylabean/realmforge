@@ -1,12 +1,15 @@
 .homepage-container {
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
+    background-color: #fef3c7;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .homepage-container p {
-    font-size: 1.1rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -32,6 +35,8 @@
     list-style-type: disc;
     list-style-position: inside;
     padding-left: 0;
+    font-size: 2rem;
+    font-family: 'Macondo';
   }
 
   .start-button {
