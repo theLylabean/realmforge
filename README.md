@@ -7,9 +7,9 @@ This project was built using the D&D 5e API and designed to feel immersive and e
 
 ## 🖼️ Screenshots
 
-![Homepage Screenshot](.src/screenshots/Homepage.png)
-![Character Details Screenshot](.src/screenshots/CharacterDetails.png)
-![Final Character Sheet Screenshot](.src/screenshots/FinalCharacterSheet.png)
+![Homepage Screenshot](../screenshots/Homepage.png)
+![Character Details Screenshot](../screenshots/CharacterDetails.png)
+![Final Character Sheet Screenshot](../screenshots/FinalCharacterSheet.png)
 
 ## 🛠️ Built With
 
