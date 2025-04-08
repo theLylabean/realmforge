@@ -92,7 +92,7 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
       </div>
 
       <div style={{ marginTop: "1rem" }}>
-        <button onClick={back}>Back</button>
+        <button onClick={back}>Back</button> &nbsp;
         <button onClick={handleSubmit}>Next</button>
       </div>
     </div>

@@ -44,6 +44,7 @@ function CharacterForm({ gameData }) {
 
   return (
     <div>
+      <br />
         {step === 1 && (
           <CharacterDetails
             data={character}
