@@ -13,9 +13,6 @@ import './characterDetails.css'
 import './buildCharacter.css'
 import './backstory.css'
 
-const baseUrl = 'https://www.dnd5eapi.co/api/2014';
-console.log(baseUrl)
-
 function App() {
   const [gameData, setGameData] = useState({
     races: [],
@@ -26,14 +23,18 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const [racesRes, classesRes] = await Promise.all([
+      // try {
+        const [racesRes, classesRes, apiRes] = await Promise.all([
           fetch('https://www.dnd5eapi.co/api/2014/races'),
-          fetch('https://www.dnd5eapi.co/api/2014/classes')
+          fetch('https://www.dnd5eapi.co/api/2014/classes'),
+          fetch('http://www.dnd5eapi.co/api/2014')
         ]);
 
         const racesData = await racesRes.json();
         const classesData = await classesRes.json();
+        const apiData = await apiRes.json();
+        // console.log(apiData);
+        // console.log(racesData);
 
         setGameData({
           races: racesData.results,
@@ -41,10 +42,11 @@ function App() {
           spells: [],
           equiptment: [],
         });
-      } catch (error) {
-        console.error('Error fetching game data:', error);
-      }
-    }
+      } 
+      // catch (error) {
+      //   console.error('Error fetching game data:', error);
+      // }
+
     fetchData();
   },[])
 

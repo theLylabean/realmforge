@@ -11,14 +11,15 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
     const fetchSpells = async () => {
       if (!data.charClass) return;
 
-      try {
+      // try {
         const res = await fetch(`https://www.dnd5eapi.co/api/2014/classes/${data.charClass}/spells`);
         const spellData = await res.json();
         setSpellList(spellData.results || []);
-      } catch (err) {
-        console.error("Failed to fetch spells:", err);
-      }
-    };
+      };
+    //   catch (err) {
+    //     console.error("Failed to fetch spells:", err);
+    //   }
+    // };
 
     fetchSpells();
   }, [data.charClass]);

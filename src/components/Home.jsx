@@ -4,7 +4,7 @@ import Header from './Header.jsx';
 
 const Home = () => {
   const navigate = useNavigate();
-  
+
   return (
     <>
         <Header />
@@ -21,8 +21,8 @@ const Home = () => {
             <li>🎲 Step-by-step character creation process</li>
             <li>📚 Uses official 5e data (races, classes, spells, etc.)</li>
             <li>🧝‍♀️ Customizable appearance, alignment, faction, deity, and backstory</li>
-            <li>🪄 Spell & equipment selection tailored to your class</li>
-            <li>📜 Fantasy-styled final character sheet</li>
+            <li>🪄 Spell & Equipment selection tailored to your class</li>
+            <li>📜 Fantasy-styled final character sheet (coming soon!)</li>
           </ul>
 
           <button className="start-button" onClick={() => navigate("/builder")}>

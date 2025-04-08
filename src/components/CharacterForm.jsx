@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import CharacterDetails from './CharacterDetails.jsx';
 import BuildCharacter from './BuildCharacter.jsx';
 import SpellsAndEquipment from './SpellsAndEquipment.jsx';
@@ -42,19 +42,8 @@ function CharacterForm({ gameData }) {
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => prev - 1);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch('https://www.dnd5eapi.co/api/2014')
-      const data = await res.json();
-    }
-    fetchData();
-  })
-
   return (
     <div>
-        <h2>
-        Step {step}
-        </h2>
         {step === 1 && (
           <CharacterDetails
             data={character}
