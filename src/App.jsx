@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      // try {
+      try {
         const [racesRes, classesRes, apiRes] = await Promise.all([
           fetch('https://www.dnd5eapi.co/api/2014/races'),
           fetch('https://www.dnd5eapi.co/api/2014/classes'),
@@ -43,9 +43,10 @@ function App() {
           equiptment: [],
         });
       } 
-      // catch (error) {
-      //   console.error('Error fetching game data:', error);
-      // }
+      catch (error) {
+        console.error('Error fetching game data:', error);
+        }
+      };
 
     fetchData();
   },[])

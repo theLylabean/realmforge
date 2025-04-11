@@ -4,22 +4,23 @@ import '../spellsAndEquipment.css';
 const SpellsAndEquipment = ({ data, updateData, next, back }) => {
   const [spellList, setSpellList] = useState([]);
   const [selectedSpells, setSelectedSpells] = useState(data.spells || []);
-  const [equipment, setEquipment] = useState(data.equipment || []);
+  const [equipment, setEquipment] = useState(data.equipment || '');
+  // const [equipment, setEquipment] = useState(data.equipment || []); - setup for when you want to pull it from the API
 
   // Fetch spells based on the selected class
   useEffect(() => {
     const fetchSpells = async () => {
       if (!data.charClass) return;
 
-      // try {
+      try {
         const res = await fetch(`https://www.dnd5eapi.co/api/2014/classes/${data.charClass}/spells`);
         const spellData = await res.json();
         setSpellList(spellData.results || []);
-      };
-    //   catch (err) {
-    //     console.error("Failed to fetch spells:", err);
-    //   }
-    // };
+      }
+      catch (err) {
+        console.error("Failed to fetch spells:", err);
+      }
+    };
 
     fetchSpells();
   }, [data.charClass]);
@@ -34,13 +35,14 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
   };
 
   const handleSubmit = () => {
-    const updatedEquipment = equipment
-      .split(',')
-      .map(item => item.trim())
-      .filter(Boolean);
+    // -----code for when you are pulling api data-----
+    // const updatedEquipment = equipment
+    //   .split(',')
+    //   .map(item => item.trim())
+    //   .filter(Boolean);
     updateData({
       ...CharacterData,
-      equipment: updatedEquipment
+      equipment: equipment
     });
 
     updateData({

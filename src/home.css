@@ -14,6 +14,10 @@
     margin-bottom: 1.5rem;
 }
 
+.homepage-header {
+  margin-top: 300px;
+}
+
 .homepage-header h1 {
     font-size: 3rem;
     font-family: 'Skranji', serif;
