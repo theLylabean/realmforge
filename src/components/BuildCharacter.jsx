@@ -18,12 +18,12 @@ const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
 
   return (
     <div className='build-character-container'>
-        <h3 id='build-character-header'>Build Your Character</h3>
+        <h1 id='build-character-header'>Build Your Character</h1>
 
         <div className='form-grid'>
             <div className='form-group'>
-                <section className='build-character-section'>
-                    <h4>Choose Race</h4>
+                <section>
+                    <h2>Choose Race</h2>
                     <RaceSelect
                         value={data.race}
                         onChange={(value) =>
@@ -34,9 +34,9 @@ const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
                 </section>
             </div>
 
-            <div className='form-group'>
+            <div>
                 <section className='build-character-selection'>
-                    <h4>Choose Class</h4>
+                    <h2>Choose Class</h2>
                     <ClassSelect
                         value={data.charClass}
                         onChange={(value) =>
@@ -47,8 +47,11 @@ const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
                 </section>
             </div>
 
-            <section className='build-character-selection'>
-                <h4>Assign Ability Scores</h4>
+        </div>
+
+        <div className='ability-container'>
+            <section>
+                <h2>Assign Ability Scores</h2>
                 <div className='ability-scores'>
                     {Object.entries(data.abilityScores).map(([stat, val]) => (
                         <div className='form-group' key={stat}>

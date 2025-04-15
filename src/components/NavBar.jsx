@@ -10,13 +10,16 @@ const NavBar = () => {
                 </h2>
                     <div className='navLinks'>
                         <Link to='/'>
-                        Home   
+                            Home   
                         </Link>
                         <Link to='/builder'>
-                        Build A Character
+                            Build A Character
                         </Link>
                         <Link to='/about'>
-                        About
+                            About
+                        </Link>
+                        <Link to='/signup'>
+                            Sign Up
                         </Link>
                     </div>
             </nav>

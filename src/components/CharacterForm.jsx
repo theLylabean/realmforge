@@ -43,7 +43,7 @@ function CharacterForm({ gameData }) {
   const prevStep = () => setStep((prev) => prev - 1);
 
   return (
-    <div>
+    <div className='characterform-container'>
       <br />
         {step === 1 && (
           <CharacterDetails

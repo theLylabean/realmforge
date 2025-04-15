@@ -12,7 +12,7 @@ const CharacterDetails = ({ data, updateData, next }) => {
     
     return (
         <div className='character-details-container'>
-            <h3 id='character-details-header'>Character Details</h3>
+            <h1 id='character-details-header'>Character Details</h1>
             
                 <div className='form-grid'>
                     <div className='form-group'>
@@ -129,8 +129,9 @@ const CharacterDetails = ({ data, updateData, next }) => {
                             onChange={handleChange}
                         />
                     </div>
+                    <br />
 
-                    <div className='form-group full-width'>
+                    <div className='form-group'>
                         <label htmlFor='appearance'>
                             Appearance:
                         </label>
