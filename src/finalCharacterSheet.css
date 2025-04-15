@@ -1,17 +1,19 @@
 .final-character-sheet {
-    background-color: #fef3c7;
-    padding: 2rem;
-    border-radius: 12px;
     max-width: 900px;
     margin: 2rem auto;
-    font-family: 'Skranji';
+    font-family: 'Skranji', serif;
     text-align: center;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid #d6b46a;
     line-height: 1.6;
 }
   
-.final-character-sheet h2 {
+.character-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.final-character-sheet h1 {
     font-size: 2.25rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -19,15 +21,8 @@
     border-bottom: 2px solid #c8b88a;
     padding-bottom: 0.5rem;
 }
-
-.character-details-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
   
-.final-character-sheet h3 {
+.final-character-sheet h2 {
     font-size: 1.5rem;
     margin-top: 2rem;
     color: #3b2f2f;
@@ -57,10 +52,6 @@
   
 .final-character-sheet h2 {
     font-size: 1.75rem;
-    }
-  
-.final-character-sheet h3 {
-    font-size: 1.25rem;
     }
 }
 

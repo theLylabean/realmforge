@@ -24,11 +24,11 @@ const formatNames = (str) => {
     })
     .join(' ');
 };
-const FinalCharacterSheet = ({ data }) => {
+const FinalCharacterSheet = ({ data, back }) => {
 
   return (
     <div className="final-character-sheet">
-        <h2>{data.name}</h2>
+        <h1>{data.name}</h1>
 
         <div className='character-details-grid'>
             <div>
@@ -79,22 +79,22 @@ const FinalCharacterSheet = ({ data }) => {
             </div>
         </div>
 
-      <h3>Ability Scores</h3>
+      <h2>Ability Scores</h2>
       <div className='ability-grid'>
         {Object.entries(data.abilityScores).map(([stat, value]) => (
-          <li key={stat}>
+          <div key={stat}>
                 <strong>
                     {formatNames(stat)}:
                  </strong>
             &nbsp;{value}
-          </li>
+          </div>
         ))}
       </div>
 
-      <h3>Appearance</h3>
+      <h2>Appearance</h2>
       <p>{data.appearance}</p>
 
-      <h3>Backstory</h3>
+      <h2>Backstory</h2>
         <div>
             {data.hometown && (
                 <p>
@@ -139,7 +139,7 @@ const FinalCharacterSheet = ({ data }) => {
             )}
         </div>
 
-        <h3>Spells</h3>
+        <h2>Spells</h2>
         <div className='final-spell-container'>
             {data.spells.length > 0 ? (
                 <ul className="spell-list">
@@ -152,11 +152,18 @@ const FinalCharacterSheet = ({ data }) => {
             ) : (
                 <p>{formatNames('No spells selected')}</p>
             )}
+
         </div>
 
 
-      <h3>Equipment</h3>
+      <h2>Equipment</h2>
         <p>{formatNames(data.equipment)}</p>
+
+        <div style={{ marginTop: "1rem" }}>
+            <button onClick={back}>
+                Back
+            </button>
+        </div>
     </div>
   );
 }

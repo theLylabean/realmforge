@@ -20,31 +20,27 @@ const BuildCharacter = ({ data, updateData, races, classes, next, back }) => {
     <div className='build-character-container'>
         <h1 id='build-character-header'>Build Your Character</h1>
 
-        <div className='form-grid'>
-            <div className='form-group'>
-                <section>
-                    <h2>Choose Race</h2>
+        <div className='choose-race-class-container'>
+            <div className='build-character-select'>
+                <h2>Choose Race</h2>
                     <RaceSelect
                         value={data.race}
                         onChange={(value) =>
                             updateData({ ...data, race: value })
                         }
                         races={races}
-                    />
-                </section>
+                />
             </div>
 
-            <div>
-                <section className='build-character-selection'>
-                    <h2>Choose Class</h2>
+            <div className='build-character-select'>
+                <h2>Choose Class</h2>
                     <ClassSelect
                         value={data.charClass}
                         onChange={(value) =>
                             updateData({ ...data, charClass: value })
                         }
                         classes={classes}
-                    />
-                </section>
+                />
             </div>
 
         </div>

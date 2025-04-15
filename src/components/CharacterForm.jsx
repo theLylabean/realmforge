@@ -43,53 +43,61 @@ function CharacterForm({ gameData }) {
   const prevStep = () => setStep((prev) => prev - 1);
 
   return (
-    <div className='characterform-container'>
-      <br />
-        {step === 1 && (
-          <CharacterDetails
-            data={character}
-            updateData={setCharacter}
-            next={nextStep}
-          />
-        )}
+    <>
+      <div className='characterform-container'>
+        <br />
+          {step === 1 && (
+            <CharacterDetails
+              data={character}
+              updateData={setCharacter}
+              next={nextStep}
+            />
+          )}
 
-        {step === 2 && (
-          <BuildCharacter 
-            data={character}
-            updateData={setCharacter}
-            next={nextStep}
-            back={prevStep}
-            races={gameData.races || []}
-            classes={gameData.classes || []}
-          /> 
-        )}
+          {step === 2 && (
+            <BuildCharacter 
+              data={character}
+              updateData={setCharacter}
+              next={nextStep}
+              back={prevStep}
+              races={gameData.races || []}
+              classes={gameData.classes || []}
+            /> 
+          )}
 
-        {step === 3 && (
-          <SpellsAndEquipment
-          data={character}
-          updateData={setCharacter}
-          next={nextStep}
-          back={prevStep}
-          />
-        )}
-
-        {step === 4 && (
-          <Backstory 
+          {step === 3 && (
+            <SpellsAndEquipment
             data={character}
             updateData={setCharacter}
             next={nextStep}
             back={prevStep}
-          />
-        )}
+            />
+          )}
 
-        {step === 5 && (
-          <FinalCharacterSheet 
-            data={character}
-            back={prevStep}
-          />
-        )}
+          {step === 4 && (
+            <Backstory 
+              data={character}
+              updateData={setCharacter}
+              next={nextStep}
+              back={prevStep}
+            />
+          )}
 
-    </div>
+          {step === 5 && (
+            <FinalCharacterSheet 
+              data={character}
+              back={prevStep}
+            />
+          )}
+
+      </div>
+
+      <div className='footer-container'>
+        <footer>
+          <p>Created by theLylabean • Built with React • Powered by Imagination ⚔️</p>
+        </footer>
+      </div>
+    </>
 
   );
 };

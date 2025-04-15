@@ -9,11 +9,11 @@ const Backstory = ({ data, updateData, next, back }) => {
 
     return (
         <div className='backstory-container'>
-            <h3 
+            <h1 
                 className='backstory-header' 
                 style={{ marginTop: "2rem" }}
                 >Backstory
-            </h3>
+            </h1>
             <p className='backstory-header'>
                 You can answer each section or write a full narrative below -- or you can do both!
             </p>

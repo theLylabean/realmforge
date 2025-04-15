@@ -1,0 +1,21 @@
+.signup-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fef3c7;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-input {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0.75rem;
+    font-family: 'Macondo';
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #cbb279;
+    background-color: #cbd5e1;
+  }
+  

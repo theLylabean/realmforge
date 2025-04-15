@@ -1,16 +1,14 @@
 .spells-equipment-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fef3c7;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Skranji', serif;
+    font-size: larger;
+    text-align: center;
 }
 
 .spells-and-equipment-header {
     text-align: center;
-    font-family: 'Skranji';
-    margin-top: "2rem"
+    font-family: 'Skranji', serif;
+    margin-top: "2rem";
+    color: #3b2f2f;
 }
 
 .spell-grid {

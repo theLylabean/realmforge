@@ -55,7 +55,10 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
 
   return (
     <div className='spells-equipment-container'>
-      <h3 className='spells-and-equipment-header'>Choose Spells</h3>
+      <h1 
+      className='spells-and-equipment-header'
+      >Choose Spells
+      </h1>
 
       <div className='spells-container'>
       {spellList.length === 0 ? (
@@ -79,10 +82,10 @@ const SpellsAndEquipment = ({ data, updateData, next, back }) => {
       )}
       </div>
 
-      <h3 
+      <h1 
         className='spells-and-equipment-header' 
         >Choose Equipment
-      </h3>
+      </h1>
       <div className='spells-equipment-form-group'>
         <textarea 
           className='spells-and-equipment-input'

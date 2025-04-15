@@ -1,17 +1,18 @@
-import { useEffect, useState } from 'react'
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar.jsx'
-import Home from './components/Home.jsx'
-import CharacterForm from './components/CharacterForm.jsx'
-import About from './components/About.jsx'
-import './App.css'
-import './index.css'
-import './navBar.css'
-import './home.css'
-import './characterDetails.css'
-import './buildCharacter.css'
-import './backstory.css'
+import { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar.jsx';
+import Home from './components/Home.jsx';
+import CharacterForm from './components/CharacterForm.jsx';
+import About from './components/About.jsx';
+import SignUpForm from './components/SignUpForm.jsx';
+import './App.css';
+import './navBar.css';
+import './home.css';
+import './characterDetails.css';
+import './buildCharacter.css';
+import './backstory.css';
+import './signUpForm.css';
 
 function App() {
   const [gameData, setGameData] = useState({
@@ -40,7 +41,7 @@ function App() {
           races: racesData.results,
           classes: classesData.results,
           spells: [],
-          equiptment: [],
+          equipment: [],
         });
       } 
       catch (error) {
@@ -60,6 +61,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/builder" element={<CharacterForm gameData={gameData} />} />
           <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<SignUpForm />} />
         </Routes>
       </main>
     </Router>

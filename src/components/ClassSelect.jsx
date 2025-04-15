@@ -2,8 +2,8 @@ import React from "react";
 
 const ClassSelect = ({ value, onChange, classes }) => {
   return (
-    <div className='form-group'>
-        <label htmlFor="class">Class:</label>
+    <div>
+        <label>Class:</label>
         <select 
             className='races-and-classes-select'
             name="class"

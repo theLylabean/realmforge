@@ -3,46 +3,47 @@
 }
 
 .navBar {
-    display: flex;
-    justify-content: space-between; /* Pushes logo left, links right */
-    align-items: center;
-    padding: 1rem;
-    background-color: #fef3c7;
-    border-bottom: 2px solid #fcd34d;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; /* Pushes logo left, links right */
+  align-items: center;
+  padding: 1rem;
+  background-color: #fef3c7;
+  border-bottom: 2px solid #fcd34d;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
   }
   
-  .navTitle {
-    font-size: 1.75rem;
-    font-family: 'Macondo';
-    color: #4b3621;
-    font-weight: bold;
-  }
+.navTitle {
+  font-size: 1.75rem;
+  font-family: 'Macondo';
+  color: #4b3621;
+  font-weight: bold;
+}
   
-  .navLinks {
-    display: flex;
-    gap: 1.25rem; /* spacing between links */
-    font-family: 'Macondo';
-    font-size: x-large;
-  }
+.navLinks {
+  display: flex;
+  gap: 1.25rem; /* spacing between links */
+  font-family: 'Macondo';
+  font-size: x-large;
+}
   
-  .navLinks a {
-    text-decoration: none;
-    color: #4b3621;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
+.navLinks a {
+  text-decoration: none;
+  color: #4b3621;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
   
-  .navLinks a:hover {
-    color: #7c3aed;
-    transform: scale(1.1);
-  }
+.navLinks a:hover {
+  color: #7c3aed;
+  transform: scale(1.1);
+}
+

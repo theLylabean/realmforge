@@ -1,21 +1,18 @@
 .homepage-container {
     text-align: center;
     max-width: 1000px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 2rem;
     background-color: #fef3c7;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
 }
 
 .homepage-container p {
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-}
-
-.homepage-header {
-  margin-top: 300px;
 }
 
 .homepage-header h1 {

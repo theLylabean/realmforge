@@ -53,19 +53,19 @@ function SignUpForm() {
 
     return (
         <div className='signup-container'>
-            <h2>
+            <h1>
                 Sign Up for RealmForge!
                 {error && <p>{error}</p>}
-            </h2>
+            </h1>
 
             <form 
-            className='form-container'
+            className='signupform-container'
             onSubmit={handleSubmit}>
                 <label>
-                    <h3>
+                    <h2>
                         Username/Email
                         <br />
-                    </h3>
+                    </h2>
 
                     <input
                         className='signup-input'
@@ -88,9 +88,9 @@ function SignUpForm() {
                     </ul>
                 )}
                 <label>
-                    <h3>
+                    <h2>
                         Password
-                    </h3>
+                    </h2>
 
                     <input 
                         className='signup-input'
