@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../signUpForm.css';
 
 function SignUpForm() {
     const [signUpForm, setSignUpForm] = useState({

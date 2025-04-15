@@ -43,9 +43,7 @@ function CharacterForm({ gameData }) {
   const prevStep = () => setStep((prev) => prev - 1);
 
   return (
-    <>
       <div className='characterform-container'>
-        <br />
           {step === 1 && (
             <CharacterDetails
               data={character}
@@ -91,14 +89,6 @@ function CharacterForm({ gameData }) {
           )}
 
       </div>
-
-      <div className='footer-container'>
-        <footer>
-          <p>Created by theLylabean • Built with React • Powered by Imagination ⚔️</p>
-        </footer>
-      </div>
-    </>
-
   );
 };
 

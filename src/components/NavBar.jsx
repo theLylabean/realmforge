@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../navBar.css';
 
 const NavBar = () => {
     return (
         <>
             <nav className='navBar'>
                 <h2 className='navTitle'>
-                🛡️ RealmForge D&D Character Builder
+                🛡️RealmForge D&D Character Builder
                 </h2>
                     <div className='navLinks'>
                         <Link to='/'>

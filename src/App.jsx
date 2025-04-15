@@ -7,12 +7,7 @@ import CharacterForm from './components/CharacterForm.jsx';
 import About from './components/About.jsx';
 import SignUpForm from './components/SignUpForm.jsx';
 import './App.css';
-import './navBar.css';
-import './home.css';
-import './characterDetails.css';
-import './buildCharacter.css';
-import './backstory.css';
-import './signUpForm.css';
+import Footer from './components/Footer.jsx';
 
 function App() {
   const [gameData, setGameData] = useState({
@@ -65,6 +60,7 @@ function App() {
         </Routes>
       </main>
     </Router>
+    <Footer />
     </>
   )
 }

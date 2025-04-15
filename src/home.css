@@ -4,12 +4,15 @@
     /* margin: 0 auto; */
     padding: 2rem;
     background-color: #fef3c7;
+    border: 3px solid #cbb279;
+    /* border-bottom: 5px solid #cbb279; */
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
 }
 
 .homepage-container p {
+    font-family: 'Macondo';
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -65,4 +68,8 @@
     }
   }
   
-  
+  span {
+    font-size: 3rem;
+    font-weight: bold;
+    /* text-decoration: underline; */
+  }

@@ -39,12 +39,6 @@ const About = () => {
           .
         </p>
       </div>
-
-      <div className='footer-container'>
-        <footer>
-          <p>Created by theLylabean • Built with React • Powered by Imagination ⚔️</p>
-        </footer>
-      </div>
     </div>
   );
 };

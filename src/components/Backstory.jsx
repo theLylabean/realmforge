@@ -1,3 +1,5 @@
+import '../backstory.css';
+
 const Backstory = ({ data, updateData, next, back }) => {
     const handleChange = (e) => {
         const {name, value} = e.target;

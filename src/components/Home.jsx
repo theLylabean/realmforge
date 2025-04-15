@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header.jsx';
+import '../home.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Home = () => {
         <Header />
         <div className='homepage-container'>
           <p>
-            Realmforge is a fully guided character creation tool built for Dungeons & Dragons 5th Edition. Whether you're a seasoned adventurer or a brand new player, Realmforge will walk you through the process of creating a complete, ready-to-play character — step by step.
+           <span>🛡️Realmforge</span> is a fully guided character creation tool built for Dungeons & Dragons 5th Edition. Whether you're a seasoned adventurer or a brand new player, Realmforge will walk you through the process of creating a complete, ready-to-play character — step by step.
           </p>
 
           <p>
@@ -28,12 +29,6 @@ const Home = () => {
           <button className="start-button" onClick={() => navigate("/builder")}>
             🛠️ Begin Building Your Character
           </button>
-        </div>
-
-        <div className='footer-container'>
-          <footer>
-            <p>Created by theLylabean • Built with React • Powered by Imagination ⚔️</p>
-          </footer>
         </div>
     </>
   );
