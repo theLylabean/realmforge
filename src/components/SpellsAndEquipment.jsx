@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import '../spellsAndEquipment.css';
 
 const SpellsAndEquipment = ({ data, updateData, next, back }) => {
