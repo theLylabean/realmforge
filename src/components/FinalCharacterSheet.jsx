@@ -1,4 +1,3 @@
-import React from "react";
 import "../finalCharacterSheet.css";
 
 const formatNames = (str) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import RaceSelect from "./RaceSelect.jsx";
 import ClassSelect from "./ClassSelect.jsx";
 import '../buildCharacter.css';

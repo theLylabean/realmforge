@@ -1,4 +1,3 @@
-import React from "react";
 import '../characterDetails.css';
 
 const CharacterDetails = ({ data, updateData, next }) => {
