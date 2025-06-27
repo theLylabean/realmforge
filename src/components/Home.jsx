@@ -10,7 +10,7 @@ const Home = () => {
         <Header />
         <div className='homepage-container'>
           <p>
-           <span>🛡️Realmforge</span> is a fully guided character creation tool built for Dungeons & Dragons 5th Edition. Whether you're a seasoned adventurer or a brand new player, Realmforge will walk you through the process of creating a complete, ready-to-play character — step by step.
+           <span>🛡️RealmForge</span> is a fully guided character creation tool built for Dungeons & Dragons 5th Edition. Whether you're a seasoned adventurer or a brand new player, Realmforge will walk you through the process of creating a complete, ready-to-play character — step by step.
           </p>
 
           <p>
